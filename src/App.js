@@ -1,5 +1,6 @@
 import shiba from "./shiba.svg";
 import "./App.scss";
+import { Container } from "./components";
 
 function App() {
   return (
@@ -15,39 +16,37 @@ function App() {
         <div>here will be img</div>
       </div>
 
-      <div className="my-web__content">
-        <div className="my-web__container__wrapper">
-          <div className="my-web__container">
-            <span className="my-web__container__img">
-              <img src={shiba} className="" alt="shiba-inu" />
-            </span>
-            <span className="my-web__container__title">Meet Tokyo</span>
-            <span className="my-web__container__text">Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky</span>
-          </div>
-        </div>
+<div className="my-web__content">
+      <Container
+        img={shiba}
+        title={'Meet Tokyo'}
+        text={'Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky'}
+      />
 
-        <div className="my-web__container__wrapper">
-          <div className="my-web__container">
-            <span className="my-web__container__img">
-              <img src={shiba} className="" alt="shiba-inu" />
-            </span>
-            <span className="my-web__container__title">Meet Tokyo</span>
-            <span className="my-web__container__text">Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky</span>
-          </div>
-        </div>
+      <Container
+        img={shiba}
+        title={'Meet Tokyo'}
+        text={'Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky'}
+      />
 
-        <div className="my-web__container__wrapper">
-          <div className="my-web__container">
-            <span className="my-web__container__img">
-              <img src={shiba} className="" alt="shiba-inu" />
-            </span>
-            <span className="my-web__container__title">Meet Tokyo</span>
-            <span className="my-web__container__text">Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky</span>
-          </div>
-        </div>
+      <Container
+        img={shiba}
+        title={'Meet Tokyo'}
+        text={'Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky'}
+      />
 
-      </div>
+<Container
+        img={shiba}
+        title={'Meet Tokyo'}
+        text={'Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky'}
+      />
 
+<Container
+        img={shiba}
+        title={'Meet Tokyo'}
+        text={'Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky'}
+      />
+</div>
     </div>
   );
 }
