@@ -1,7 +1,4 @@
-import dogo from "./dogo.svg";
-import avatar from "./avatar.svg";
-import tennis from "./tennis.svg";
-import world from "./world.svg";
+import { dogo, avatar, tennis, world } from "./assets";
 import "./App.scss";
 import { Container } from "./components";
 
