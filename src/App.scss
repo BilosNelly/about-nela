@@ -93,6 +93,36 @@
       text-overflow: ellipsis;
     }
   }
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 48px;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+      min-width: 62px;
+      border: 1px solid white;
+      border-radius: 5px;
+      font-size: 18px;
+      margin: 8px;
+
+      &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+
+
 }
 
 .App-logo {

@@ -51,6 +51,27 @@ function App() {
       </div>
 
 
+      <div className="my-web__skills__wrapper">
+        <div className="my-web__skills">
+          <span className="my-web__about__title">Some of the tools I learned to work with at Infobip..</span>
+          
+          <div className="my-web__skills__item__wrapper">
+            <div className="my-web__skills__item">
+              <span>Jira</span>
+            </div>
+
+            <div className="my-web__skills__item">
+              <span>Jira</span>
+            </div>
+
+            <div className="my-web__skills__item">
+              <span>Jira</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
 
 
