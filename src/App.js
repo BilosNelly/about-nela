@@ -1,6 +1,6 @@
 import { dogo, avatar, tennis, world } from "./assets";
 import "./App.scss";
-import { Container } from "./components";
+import { Chip, Container } from "./components";
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
 
         <Container
           img={tennis}
-          title={"Meet Tokyo"}
+          title={"Ping Pong"}
           text={
             "It is unusual to have an IT company without a ping-pong table. That's how it all started... exhibitioner since 2017."
           }
@@ -56,17 +56,23 @@ function App() {
           <span className="my-web__about__title">Some of the tools I learned to work with at Infobip..</span>
           
           <div className="my-web__skills__item__wrapper">
-            <div className="my-web__skills__item">
-              <span>Jira</span>
-            </div>
+          <Chip name={'React'}/>
+            <Chip name={'Typescript'}/>
+            <Chip name={'Javascript'}/>
+            <Chip name={'NodeJS'}/>
+            <Chip name={'GraphQl'}/>
+            <Chip name={'CSS'}/>
+            <Chip name={'Less'}/>
+            <Chip name={'Sass'}/>
+            <Chip name={'Git'}/>
+            <Chip name={'Github'}/>
+            <Chip name={'Webpack'}/>
+            <Chip name={'Scrum'}/>
+            <Chip name={'Jira'}/>
+            <Chip name={'Confluence'}/>
+            <Chip name={'Linux'}/>
 
-            <div className="my-web__skills__item">
-              <span>Jira</span>
-            </div>
 
-            <div className="my-web__skills__item">
-              <span>Jira</span>
-            </div>
           </div>
 
         </div>

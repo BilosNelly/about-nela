@@ -117,6 +117,10 @@
       &__wrapper {
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
+        align-self: flex-end;
+        max-width: 780px;
+        padding: 28px 0;
       }
     }
   }
