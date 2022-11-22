@@ -11,10 +11,10 @@
   justify-content: center;
   color: white;
 
-  background-image: url('./avatar.svg');
+  background-image: url('./avatar.svg'), url('./laptop.svg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top right; 
+  background-position: top right, left bottom; 
 
   &__header {
     display: flex;
@@ -54,9 +54,8 @@
       }
 
       > img {
-        width: 82px;
-        height: 82px;
-        background-color: tan;    
+        width: 92px;
+        height: 92px; 
       }
     }
 

@@ -1,5 +1,7 @@
-import shiba from "./shiba.svg";
+import dogo from "./dogo.svg";
 import avatar from "./avatar.svg";
+import tennis from "./tennis.svg";
+import world from "./world.svg";
 import "./App.scss";
 import { Container } from "./components";
 
@@ -13,45 +15,42 @@ function App() {
 
       <div className="my-web__content">
         <Container
-          img={shiba}
-          title={"Meet Tokyo"}
-          text={
-            "Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky"
-          }
-        />
-
-        <Container
           img={avatar}
-          title={"Meet Tokyo"}
+          title={"Antonela"}
           text={
-            "Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky"
+            "Software developer, full-stack but web oriented. Bachelor in computer science and world citizen since 1996."
           }
         />
 
         <Container
-          img={shiba}
-          title={"Meet Tokyo"}
+          img={dogo}
+          title={"Tokyo"}
           text={
-            "Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky"
+            "Shiba inu. Crazy dog. Demon since 2021. FYI: 2 Important facts about Tokyo: He is older than the Eleon Musk\'s Shiba & was not named after La casa de papel."
           }
         />
 
         <Container
-          img={shiba}
-          title={"Meet Tokyo"}
+          img={world}
+          title={"Where now?"}
           text={
-            "Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky"
+            "One of my biggest hobbies is traveling. I love to wander around, explore new places, meet new cultures and get out of my comfort zone."
           }
         />
 
         <Container
-          img={shiba}
+          img={tennis}
           title={"Meet Tokyo"}
           text={
-            "Here will be text about Tokyo Here will be text about Tokyo Here will be text about Toky Here will be text about Toky Here will be text about Toky"
+            "It is unusual to have an IT company without a ping-pong table. That's how it all started... exhibitioner since 2017."
           }
         />
       </div>
+
+      <div>
+        <span>About beginnings in IT...</span>
+      </div>
+
     </div>
   );
 }
