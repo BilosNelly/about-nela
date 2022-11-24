@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./MyWeb.scss";
 import {
   ajax,
   avatar,
