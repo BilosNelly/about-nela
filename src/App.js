@@ -11,7 +11,25 @@ import {
   webpack,
   world,
 } from "./assets";
-import { Chip, Container, Course } from "./components";
+import { ChipList, Container, Course, JobDescription } from "./components";
+
+const skills = [
+  'React',
+  'Typescript',
+  'Javascript',
+  'NodeJS',
+  'GraphQl',
+  'CSS',
+  'Less',
+  'Sass',
+  'Webpack',
+  'Git',
+  'Github',
+  'Linux',
+  'Scrum',
+  'Jira',
+  'Confluence'
+]
 
 function App() {
   return (
@@ -24,6 +42,7 @@ function App() {
       </div>
 
       <div className="my-web__content">
+        {/* This will be ContainerList */}
         <Container
           img={avatar}
           title={"Antonela"}
@@ -76,56 +95,15 @@ function App() {
           <span className="my-web__about__title">
             Some of the tools I learned to work with at Infobip..
           </span>
-
-          {/* This should be a list of Chips */}
-          <div className="my-web__skills__item__wrapper">
-            <Chip name={"React"} />
-            <Chip name={"Typescript"} />
-            <Chip name={"Javascript"} />
-            <Chip name={"NodeJS"} />
-            <Chip name={"GraphQl"} />
-            <Chip name={"CSS"} />
-            <Chip name={"Less"} />
-            <Chip name={"Sass"} />
-            <Chip name={"Git"} />
-            <Chip name={"Github"} />
-            <Chip name={"Webpack"} />
-            <Chip name={"Scrum"} />
-            <Chip name={"Jira"} />
-            <Chip name={"Confluence"} />
-            <Chip name={"Linux"} />
-          </div>
+    
+          <ChipList skills={skills}/>
 
           <span className="my-web__about__title align-end">
             What were my responsibilities?
           </span>
-          <div className="my-web__job-description__wrapper">
-            <div className="my-web__job-description">
-              <ul>
-                <li>Resolving tasks, creating apps from start to end</li>
-                <li>
-                  Developing, maintaining, monitoring and troubleshooting team
-                  services{" "}
-                </li>
-                <li>Working within agile framework (Scrum, LESS) </li>
-                <li>
-                  Growing towards full stack development primarily on frontend
-                  development but also expanding knowledge on working with
-                  databases, system design, alerting and monitoring tools and
-                  backend development{" "}
-                </li>
-                <li>
-                  Under the guidance of Architects writing well designed,
-                  testable and scalable code in accordance with clean code
-                  principles{" "}
-                </li>
-                <li>
-                  Expanding and improving knowledge both internally and
-                  externally as a part of engineering community
-                </li>
-              </ul>
-            </div>
-          </div>
+
+          <JobDescription/>
+
         </div>
       </div>
 
