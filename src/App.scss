@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding: 60px 0px 120px;
   font-family: monospace;
   font-size: calc(10px + 2vmin);
   background-color: #110e17;
@@ -36,7 +36,6 @@
       display: flex;
       padding: 8px 8px 16px;
       width: 238px;
-      height: 330px;
       border: 1px solid white;
       border-radius: 5px;
       margin: 16px;
@@ -125,6 +124,70 @@
     }
   }
 
+  &__job-description {
+    display: flex;
+    font-size: 18px;
+    line-height: 34px;
+    
+    > ul {
+      margin: 0;
+      padding: 0 32px;
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: #7b0180;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-self: flex-end;
+      border: 1px solid white;
+      padding: 8px 16px;
+      max-width: 500px;
+      margin: 28px 0;
+    }
+  }
+
+  &__cert {
+    display: flex;
+    padding: 8px;
+    margin: 16px;
+    border-radius: 5px;
+    background-color: #7b0180;
+    transition: all 0.3s;
+
+    :hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    &__list {
+      display: flex;
+      flex-direction: column;
+      padding: 60px;
+    }
+
+    &__img {
+      display: flex;
+      width: 270px;
+      height: 200px;
+      
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
 
 
 }
@@ -147,6 +210,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.align-end {
+  display: flex;
+    align-self: flex-end;
 }
 
 .highlight {
