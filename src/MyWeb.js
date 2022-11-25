@@ -1,4 +1,5 @@
-import "./MyWeb.scss";
+import React, { useState } from 'react';
+import "./styles/MyWeb.scss";
 import {
   ajax,
   avatar,
@@ -11,7 +12,7 @@ import {
   webpack,
   world,
 } from "./assets";
-import { ChipList, Container, Course, JobDescription } from "./components";
+import { ChipList, Container, Course, JobDescription, FAQ } from "./components";
 
 const skills = [
   'React',
@@ -31,7 +32,23 @@ const skills = [
   'Confluence'
 ]
 
+const questions = [
+  {
+    id: 1, 
+    question: 'Hello World', 
+    response: 'Welcome to learning React!'
+  },
+  {
+    id: 2, 
+    question: 'Installation', 
+    response: 'You can install React from npm.'
+  }
+]
+
 function App() {
+
+  const [showResponse, setShowResponse] = useState(false);
+
   return (
     <div className="my-web">
       <div className="my-web__header">
@@ -95,38 +112,65 @@ function App() {
           <span className="my-web__about__title">
             Some of the tools I learned to work with at Infobip..
           </span>
-    
-          <ChipList skills={skills}/>
+
+          <ChipList skills={skills} />
 
           <span className="my-web__about__title align-end">
             What were my responsibilities?
           </span>
 
-          <JobDescription/>
-
+          <JobDescription />
         </div>
       </div>
 
       <div className="my-web__cert__list">
         <div>Udemy courses I attended</div>
         <div className="my-web__cert__wrapper">
-          <Course img={hooks} link={"https://udemy-certificate.s3.amazonaws.com/pdf/UC-45d6eb11-b38f-4bb3-b02b-97a9b4bdb3dd.pdf"}/>
-          <Course img={webpack} link={"https://www.udemy.com/certificate/UC-9B6AY32B/"}/>
-          <Course img={javascript} link={"https://www.udemy.com/certificate/UC-8207d41c-e3c0-4c0e-9b80-418aabf29d88/"}/>
-          <Course img={ajax} link={"https://www.udemy.com/certificate/UC-IU9VKT17/"}/>
+          <Course
+            img={hooks}
+            link={
+              "https://udemy-certificate.s3.amazonaws.com/pdf/UC-45d6eb11-b38f-4bb3-b02b-97a9b4bdb3dd.pdf"
+            }
+          />
+          <Course
+            img={webpack}
+            link={"https://www.udemy.com/certificate/UC-9B6AY32B/"}
+          />
+          <Course
+            img={javascript}
+            link={
+              "https://www.udemy.com/certificate/UC-8207d41c-e3c0-4c0e-9b80-418aabf29d88/"
+            }
+          />
+          <Course
+            img={ajax}
+            link={"https://www.udemy.com/certificate/UC-IU9VKT17/"}
+          />
         </div>
       </div>
 
       <div className="my-web__cert__list">
         <div>HackerRank courses I attended</div>
         <div className="my-web__cert__wrapper">
-          <Course img={jsbasics} link={"https://www.hackerrank.com/certificates/75673754bc21"}/>
-          <Course img={jsadvanced} link={"https://www.hackerrank.com/certificates/iframe/e0c20aed3909"}/>
+          <Course
+            img={jsbasics}
+            link={"https://www.hackerrank.com/certificates/75673754bc21"}
+          />
+          <Course
+            img={jsadvanced}
+            link={"https://www.hackerrank.com/certificates/iframe/e0c20aed3909"}
+          />
         </div>
       </div>
+      {/* REFACTOR READY */}
+      <FAQ questions={questions} showResponse={showResponse} onClick={onQuestionClick}/>
 
     </div>
   );
+
+  function onQuestionClick() {
+    console.log('ta daa')
+  }
 }
 
 export default App;

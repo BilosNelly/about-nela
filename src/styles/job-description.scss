@@ -1,0 +1,31 @@
+.my-web {
+    &__job-description {
+        display: flex;
+        font-size: 18px;
+        line-height: 34px;
+        
+        > ul {
+          margin: 0;
+          padding: 0 32px;
+          list-style: none;
+        }
+    
+        ul li::before {
+          content: "\2022";
+          color: #7b0180;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+    
+        &__wrapper {
+          display: flex;
+          align-self: flex-end;
+          border: 1px solid white;
+          padding: 8px 16px;
+          max-width: 500px;
+          margin: 28px 0;
+        }
+      }
+}

@@ -1,0 +1,22 @@
+.my-web {
+    &__about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 580px;
+    
+        &__title {
+          padding: 16px 0;
+        }
+    
+        &__text {
+          font-size: 18px;
+          display: flex;
+          text-align: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+}
