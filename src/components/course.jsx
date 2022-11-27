@@ -1,4 +1,13 @@
 // This will be CoursesList Component, with Course component
+
+import * as React from 'react';
+
+// interface Props {
+//   title: string;
+//   img: string
+//   description: JSX.Element;
+// }
+
 export const Course = (props) => {
   return (
     <div

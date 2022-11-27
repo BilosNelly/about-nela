@@ -1,4 +1,4 @@
-export const JobDescription = (props) => {
+export const JobDescription = () => {
   return (
     <div className="my-web__job-description__wrapper">
       <div className="my-web__job-description">

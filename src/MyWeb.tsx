@@ -13,6 +13,7 @@ import {
   world,
 } from "./assets";
 import { ChipList, Container, Course, JobDescription, FAQ } from "./components";
+import { ISkills } from './typings';
 
 const skills = [
   'React',
