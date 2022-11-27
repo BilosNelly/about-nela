@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import "./styles/MyWeb.scss";
+
+import './styles/MyWeb.scss';
 import {
   ajax,
   avatar,
@@ -11,38 +12,32 @@ import {
   tennis,
   webpack,
   world,
-} from "./assets";
-import { ChipList, Container, Course, JobDescription, FAQ } from "./components";
+} from './assets';
+import { ChipList, Course, JobDescription, FAQ, ContainerList, Introduction } from './components';
+import { skills } from './constants/skills';
+import { questions } from './constants/questions';
 
-const skills = [
-  'React',
-  'Typescript',
-  'Javascript',
-  'NodeJS',
-  'GraphQl',
-  'CSS',
-  'Less',
-  'Sass',
-  'Webpack',
-  'Git',
-  'Github',
-  'Linux',
-  'Scrum',
-  'Jira',
-  'Confluence'
-]
-
-const questions = [
+const containerList = [
   {
-    id: 1, 
-    question: 'Hello World', 
-    response: 'Welcome to learning React!'
+    img: avatar,
+    title: "Antonela",
+    text: "Software developer, full-stack but web oriented. Bachelor in computer science and world citizen since 1996."
   },
   {
-    id: 2, 
-    question: 'Installation', 
-    response: 'You can install React from npm.'
-  }
+    img: dogo,
+    title: "Tokyo",
+    text: "Shiba inu. Crazy dog. Demon since 2021. FYI: 2 Important facts about Tokyo: He is older than the Elon Musk's Shiba & was not named after La casa de papel."
+  },
+  {
+    img: world,
+    title: "Where now?",
+    text: "One of my biggest hobbies is traveling. I love to wander around, explore new places, meet new cultures and get out of my comfort zone."
+  },
+  {
+    img: tennis,
+    title: "Ping Pong",
+    text: "It is unusual to have an IT company without a ping-pong table. That's how it all started... exhibitioner since 2017."
+  },
 ]
 
 function App() {
@@ -59,66 +54,20 @@ function App() {
       </div>
 
       <div className="my-web__content">
-        {/* This will be ContainerList */}
-        <Container
-          img={avatar}
-          title={"Antonela"}
-          text={
-            "Software developer, full-stack but web oriented. Bachelor in computer science and world citizen since 1996."
-          }
-        />
-
-        <Container
-          img={dogo}
-          title={"Tokyo"}
-          text={
-            "Shiba inu. Crazy dog. Demon since 2021. FYI: 2 Important facts about Tokyo: He is older than the Elon Musk's Shiba & was not named after La casa de papel."
-          }
-        />
-
-        <Container
-          img={world}
-          title={"Where now?"}
-          text={
-            "One of my biggest hobbies is traveling. I love to wander around, explore new places, meet new cultures and get out of my comfort zone."
-          }
-        />
-
-        <Container
-          img={tennis}
-          title={"Ping Pong"}
-          text={
-            "It is unusual to have an IT company without a ping-pong table. That's how it all started... exhibitioner since 2017."
-          }
-        />
+        <ContainerList containerItems={containerList}/>
       </div>
 
-      <div className="my-web__about">
-        <span className="my-web__about__title">About beginnings in IT...</span>
-        <span className="my-web__about__text">
-          Enrolled in college around 2014, studied a little, socialized a bit
-          more, and in second year of college sent an application and resume to
-          an Istrian company, Infobip.
-        </span>
-        <span className="my-web__about__text">
-          I started working as an intern on web projects using React,
-          Javascript, Typescript, NodeJS and later advanced to further
-          positions.
-        </span>
-      </div>
+      <Introduction/>
 
       <div className="my-web__skills__wrapper">
         <div className="my-web__skills">
           <span className="my-web__about__title">
             Some of the tools I learned to work with at Infobip..
           </span>
-
           <ChipList skills={skills} />
-
           <span className="my-web__about__title align-end">
             What were my responsibilities?
           </span>
-
           <JobDescription />
         </div>
       </div>
