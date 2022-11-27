@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 interface Props {
   title: string;
   img: string
@@ -11,7 +9,7 @@ export const Container = (props: Props) => {
     <div className="my-web__container__wrapper">
       <div className="my-web__container">
         <span className="my-web__container__img">
-          <img src={props.img} />
+          <img alt={'Icons'} src={props.img} />
         </span>
         <span className="my-web__container__title highlight">{props.title}</span>
         <span className="my-web__container__text">{props.text}</span>

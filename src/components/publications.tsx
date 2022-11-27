@@ -6,10 +6,10 @@ export const Publications = () => {
             <span>My publications</span>
             <div className="my-web__publications__wrapper">
                 <div className="my-web__publications__img">
-                    <img src={medium} onClick={() => window.open("https://medium.com/@bilosantonela1996", '_blank')} />
+                    <img alt={'Medium social'} src={medium} onClick={() => window.open("https://medium.com/@bilosantonela1996", '_blank')} />
                 </div>
                 <div className="my-web__publications__img">
-                    <img src={tealfeed} onClick={() => window.open("https://tealfeed.com/nela1806", '_blank')} />
+                    <img alt={'Tealfeed social'} src={tealfeed} onClick={() => window.open("https://tealfeed.com/nela1806", '_blank')} />
                 </div>
             </div>
         </div>

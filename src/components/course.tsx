@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 interface Props {
   link: string;
   img: string;
@@ -13,7 +11,7 @@ export const Course = (props: Props) => {
       onClick={() => window.location.assign(props.link)}
     >
       <div className="my-web__cert__img">
-        <img src={props.img} />
+        <img alt={'Couse image'} src={props.img} />
       </div>
     </div>
   );

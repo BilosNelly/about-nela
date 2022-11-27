@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import { useState } from 'react';
 import classNames from 'classnames';
 
 import { Question } from '../enums';
@@ -17,7 +17,7 @@ export const FAQ = () => {
           <li role="button" className={getClassName(Question.FIRST)} onClick={() => onFAQClick(Question.FIRST)}>
             <div className="my-web__faq__question">
               <span className="my-web__faq__img">
-                <img src={triangle} />
+                <img alt={'Triangle icon, list marker'} src={triangle} />
               </span>
               <span className="my-web__faq__copy">{'What I want to learn in the future?'}</span>
             </div>
@@ -33,7 +33,7 @@ export const FAQ = () => {
           <li role="button" className={getClassName(Question.SECOND)} onClick={() => onFAQClick(Question.SECOND)}>
             <div className="my-web__faq__question">
               <span className="my-web__faq__img">
-                <img src={triangle} />
+                <img alt={'Triangle icon, list marker'} src={triangle} />
               </span>
               <span className="my-web__faq__copy">{'Which soft skills do I want to develop more?'}</span>
             </div>
@@ -49,7 +49,7 @@ export const FAQ = () => {
           <li role="button" className={getClassName(Question.THIRD)} onClick={() => onFAQClick(Question.THIRD)}>
             <div className="my-web__faq__question">
               <span className="my-web__faq__img">
-                <img src={triangle} />
+                <img alt={'Triangle icon, list marker'} src={triangle} />
               </span>
               <span className="my-web__faq__copy">{'Something about you that is not in your resume?'}</span>
             </div>

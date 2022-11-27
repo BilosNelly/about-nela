@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import { IContainerItem } from '../typings';
 import Container from './container';
 
