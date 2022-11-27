@@ -6,6 +6,8 @@ import javascript from './javascript.svg';
 import jsadvanced from './jsadvanced.svg';
 import jsbasics from './jsbasics.svg';
 import laptop from './laptop.svg';
+import medium from './medium.svg';
+import tealfeed from './tealfeed.svg';
 import tennis from './tennis.svg';
 import triangle from './triangle.svg';
 import webpack from './webpack.svg';
@@ -20,6 +22,8 @@ export {
     jsadvanced,
     jsbasics,
     laptop,
+    medium,
+    tealfeed,
     tennis,
     triangle,
     webpack,

@@ -1,6 +1,6 @@
 import './styles/MyWeb.scss';
 
-import { ChipList, JobDescription, FAQ, ContainerList, Introduction, CoursesList } from './components';
+import { ChipList, JobDescription, FAQ, ContainerList, Introduction, CoursesList, Publications } from './components';
 import { containerList, hackerRankCourses, udemyCourses, skills } from './constants';
 
 function App() {
@@ -41,6 +41,8 @@ function App() {
         </div>
       </div>
       <FAQ />
+      {/* <ContactForm /> */}
+      <Publications/>
     </div>
   );
 }

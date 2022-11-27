@@ -2,7 +2,7 @@ import react, { useState } from 'react';
 import classNames from 'classnames';
 
 import { Question } from '../enums';
-import { triangle } from '../assets';
+import { triangle } from '../assets/index.jsx';
 
 export const FAQ = () => {
 

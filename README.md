@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Getting Started with App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Typescript is added and custom tsconfig.
+The goal of the application is to have a CV on the web.
+The content was added more or less without meaning, but it will be refactored in the future.
+For now, the application is intended for the web, but a mobile version will arrive in a few days.
+The application is made completely without a backend, only the client side.
+
+@TODO, Contact-form will be added
+https://www.emailjs.com/ will be used as emailservice and implemented via https://www.npmjs.com/package/emailjs.
 
 ## Available Scripts
 

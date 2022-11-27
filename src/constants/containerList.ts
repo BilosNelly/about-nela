@@ -6,7 +6,7 @@ import {
     dogo,
     tennis,
     world,
-  } from '../assets';
+  } from '../assets/index.jsx';
 
 export const containerList: IContainerItem[] = [
     {
