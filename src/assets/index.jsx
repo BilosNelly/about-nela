@@ -7,6 +7,7 @@ import jsadvanced from './jsadvanced.svg';
 import jsbasics from './jsbasics.svg';
 import laptop from './laptop.svg';
 import tennis from './tennis.svg';
+import triangle from './triangle.svg';
 import webpack from './webpack.svg';
 import world from './world.svg';
 
@@ -20,6 +21,7 @@ export {
     jsbasics,
     laptop,
     tennis,
+    triangle,
     webpack,
     world,
 }

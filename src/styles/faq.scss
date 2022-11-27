@@ -1,11 +1,12 @@
 .my-web {
     &__faq {
         display: flex;
-        
     
         &__wrapper {
           display: flex;
           flex-direction: column;
+          max-width: 800px;
+          min-height: 300px;
         }
     
         &__title {
@@ -13,30 +14,41 @@
           justify-content: center;
           padding: 8px 0;
           border-bottom: 2px solid #7b0180;
-          max-width: 500px;
+        }
+
+        &__copy {
+          font-size: 18px;
         }
     
         &__list {
-    
-          //This makes list decorations to look like triangle
           ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             margin: 0.75em 0;
             padding: 0 1em;
             list-style: none;
+            min-width: 800px;
+
+            li {
+              cursor: pointer;
+              padding-bottom: 16px;
+            }
           }
-    
-          li::before { 
-            content: "";
-            border-color: transparent #7b0180;
-            border-style: solid;
-            border-width: 0.35em 0 0.35em 0.45em;
-            display: block;
-            height: 0;
-            width: 0;
-            left: -1em;
-            top: 0.9em;
-            position: relative;
+        }
+
+        &__list-item {
+            &--selected {
+              img {
+                transform: rotate(90deg);
+                transition: transform 0.25s;
+            }
           }
+        }
+
+        &__question {
+          display: flex;
+          align-items: center;
         }
     
         &__response {
@@ -47,10 +59,19 @@
           border-radius: 5px;
           
           &__copy {
-            display: flex;
             font-size: 14px;
+
+            a {
+              color: #7b0180;
+            }
           }
         }
-    
+
+        &__img {
+          display: flex;
+          width: 20px;
+          height: 20px;
+          padding-right: 8px;
+        }
       }
 }

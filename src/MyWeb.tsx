@@ -49,15 +49,10 @@ function App() {
           <CoursesList courses={hackerRankCourses} />
         </div>
       </div>
-      {/* REFACTOR READY */}
-      <FAQ questions={questions} showResponse={showResponse} onClick={onQuestionClick} />
+      <FAQ />
 
     </div>
   );
-
-  function onQuestionClick() {
-    console.log('ta daa')
-  }
 }
 
 export default App;
