@@ -1,4 +1,12 @@
-export const Container = (props) => {
+import * as React from 'react';
+
+interface Props {
+  title: string;
+  img: string
+  text: string;
+}
+
+export const Container = (props: Props) => {
   return (
     <div className="my-web__container__wrapper">
       <div className="my-web__container">

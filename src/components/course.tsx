@@ -1,14 +1,11 @@
-// This will be CoursesList Component, with Course component
-
 import * as React from 'react';
 
-// interface Props {
-//   title: string;
-//   img: string
-//   description: JSX.Element;
-// }
+interface Props {
+  link: string;
+  img: string;
+}
 
-export const Course = (props) => {
+export const Course = (props: Props) => {
   return (
     <div
       className="my-web__cert"
