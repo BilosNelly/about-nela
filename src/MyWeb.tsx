@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-
 import './styles/MyWeb.scss';
+
 import { ChipList, JobDescription, FAQ, ContainerList, Introduction, CoursesList } from './components';
-import { containerList, hackerRankCourses, udemyCourses, questions, skills } from './constants';
+import { containerList, hackerRankCourses, udemyCourses, skills } from './constants';
 
 function App() {
-
-  const [showResponse, setShowResponse] = useState(false);
-
   return (
     <div className="my-web">
       <div className="my-web__header">
@@ -16,13 +12,10 @@ function App() {
           Hello! I am Antonela, thanks for being here!
         </span>
       </div>
-
       <div className="my-web__content">
         <ContainerList containerItems={containerList} />
       </div>
-
       <Introduction />
-
       <div className="my-web__skills__wrapper">
         <div className="my-web__skills">
           <span className="my-web__about__title">
@@ -35,14 +28,12 @@ function App() {
           <JobDescription />
         </div>
       </div>
-
       <div className="my-web__cert__list">
         <div>Udemy courses I attended</div>
         <div className="my-web__cert__wrapper">
           <CoursesList courses={udemyCourses} />
         </div>
       </div>
-
       <div className="my-web__cert__list">
         <div>HackerRank courses I attended</div>
         <div className="my-web__cert__wrapper">
@@ -50,7 +41,6 @@ function App() {
         </div>
       </div>
       <FAQ />
-
     </div>
   );
 }
