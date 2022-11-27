@@ -13,11 +13,12 @@ import {
   webpack,
   world,
 } from './assets';
-import { ChipList, Course, JobDescription, FAQ, ContainerList, Introduction } from './components';
+import { ChipList, JobDescription, FAQ, ContainerList, Introduction, CoursesList } from './components';
 import { skills } from './constants/skills';
 import { questions } from './constants/questions';
+import { IContainerItem, ICourse } from './typings';
 
-const containerList = [
+const containerList: IContainerItem[] = [
   {
     img: avatar,
     title: "Antonela",
@@ -40,6 +41,36 @@ const containerList = [
   },
 ]
 
+const udemyCourses: ICourse[] = [
+  {
+    img: hooks,
+    link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-45d6eb11-b38f-4bb3-b02b-97a9b4bdb3dd.pdf"
+  },
+  {
+    img: webpack,
+    link: "https://www.udemy.com/certificate/UC-9B6AY32B/"
+  },
+  {
+    img: javascript,
+    link: "https://www.udemy.com/certificate/UC-8207d41c-e3c0-4c0e-9b80-418aabf29d88/"
+  },
+  {
+    img: ajax,
+    link: "https://www.udemy.com/certificate/UC-IU9VKT17/"
+  },
+]
+
+const hackerRankCourses: ICourse[] = [
+  {
+    img: jsbasics,
+    link: "https://www.hackerrank.com/certificates/75673754bc21"
+  },
+  {
+    img: jsadvanced,
+    link: "https://www.hackerrank.com/certificates/iframe/e0c20aed3909"
+  }
+]
+
 function App() {
 
   const [showResponse, setShowResponse] = useState(false);
@@ -54,10 +85,10 @@ function App() {
       </div>
 
       <div className="my-web__content">
-        <ContainerList containerItems={containerList}/>
+        <ContainerList containerItems={containerList} />
       </div>
 
-      <Introduction/>
+      <Introduction />
 
       <div className="my-web__skills__wrapper">
         <div className="my-web__skills">
@@ -75,44 +106,18 @@ function App() {
       <div className="my-web__cert__list">
         <div>Udemy courses I attended</div>
         <div className="my-web__cert__wrapper">
-          <Course
-            img={hooks}
-            link={
-              "https://udemy-certificate.s3.amazonaws.com/pdf/UC-45d6eb11-b38f-4bb3-b02b-97a9b4bdb3dd.pdf"
-            }
-          />
-          <Course
-            img={webpack}
-            link={"https://www.udemy.com/certificate/UC-9B6AY32B/"}
-          />
-          <Course
-            img={javascript}
-            link={
-              "https://www.udemy.com/certificate/UC-8207d41c-e3c0-4c0e-9b80-418aabf29d88/"
-            }
-          />
-          <Course
-            img={ajax}
-            link={"https://www.udemy.com/certificate/UC-IU9VKT17/"}
-          />
+          <CoursesList courses={udemyCourses} />
         </div>
       </div>
 
       <div className="my-web__cert__list">
         <div>HackerRank courses I attended</div>
         <div className="my-web__cert__wrapper">
-          <Course
-            img={jsbasics}
-            link={"https://www.hackerrank.com/certificates/75673754bc21"}
-          />
-          <Course
-            img={jsadvanced}
-            link={"https://www.hackerrank.com/certificates/iframe/e0c20aed3909"}
-          />
+          <CoursesList courses={hackerRankCourses} />
         </div>
       </div>
       {/* REFACTOR READY */}
-      <FAQ questions={questions} showResponse={showResponse} onClick={onQuestionClick}/>
+      <FAQ questions={questions} showResponse={showResponse} onClick={onQuestionClick} />
 
     </div>
   );
