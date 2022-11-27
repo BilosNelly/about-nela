@@ -1,75 +1,8 @@
 import React, { useState } from 'react';
 
 import './styles/MyWeb.scss';
-import {
-  ajax,
-  avatar,
-  dogo,
-  hooks,
-  javascript,
-  jsadvanced,
-  jsbasics,
-  tennis,
-  webpack,
-  world,
-} from './assets';
 import { ChipList, JobDescription, FAQ, ContainerList, Introduction, CoursesList } from './components';
-import { skills } from './constants/skills';
-import { questions } from './constants/questions';
-import { IContainerItem, ICourse } from './typings';
-
-const containerList: IContainerItem[] = [
-  {
-    img: avatar,
-    title: "Antonela",
-    text: "Software developer, full-stack but web oriented. Bachelor in computer science and world citizen since 1996."
-  },
-  {
-    img: dogo,
-    title: "Tokyo",
-    text: "Shiba inu. Crazy dog. Demon since 2021. FYI: 2 Important facts about Tokyo: He is older than the Elon Musk's Shiba & was not named after La casa de papel."
-  },
-  {
-    img: world,
-    title: "Where now?",
-    text: "One of my biggest hobbies is traveling. I love to wander around, explore new places, meet new cultures and get out of my comfort zone."
-  },
-  {
-    img: tennis,
-    title: "Ping Pong",
-    text: "It is unusual to have an IT company without a ping-pong table. That's how it all started... exhibitioner since 2017."
-  },
-]
-
-const udemyCourses: ICourse[] = [
-  {
-    img: hooks,
-    link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-45d6eb11-b38f-4bb3-b02b-97a9b4bdb3dd.pdf"
-  },
-  {
-    img: webpack,
-    link: "https://www.udemy.com/certificate/UC-9B6AY32B/"
-  },
-  {
-    img: javascript,
-    link: "https://www.udemy.com/certificate/UC-8207d41c-e3c0-4c0e-9b80-418aabf29d88/"
-  },
-  {
-    img: ajax,
-    link: "https://www.udemy.com/certificate/UC-IU9VKT17/"
-  },
-]
-
-const hackerRankCourses: ICourse[] = [
-  {
-    img: jsbasics,
-    link: "https://www.hackerrank.com/certificates/75673754bc21"
-  },
-  {
-    img: jsadvanced,
-    link: "https://www.hackerrank.com/certificates/iframe/e0c20aed3909"
-  }
-]
+import { containerList, hackerRankCourses, udemyCourses, questions, skills } from './constants';
 
 function App() {
 
