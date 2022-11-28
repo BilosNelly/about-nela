@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/about-nela/static/css/main.3001a3a1.css",
+    "main.js": "/about-nela/static/js/main.56246cad.js",
+    "static/js/787.fb265414.chunk.js": "/about-nela/static/js/787.fb265414.chunk.js",
+    "static/media/javascript.svg": "/about-nela/static/media/javascript.cf203015f38d8758475c5654dcd5ffd9.svg",
+    "static/media/ajax.svg": "/about-nela/static/media/ajax.b5dce6d08096be40cefff5986bee5ef7.svg",
+    "static/media/webpack.svg": "/about-nela/static/media/webpack.aa940c33e08d6cd9a2c28c22de3eaac2.svg",
+    "static/media/hooks.svg": "/about-nela/static/media/hooks.62142d2c59684712871bd71db0b16f7a.svg",
+    "static/media/jsbasics.svg": "/about-nela/static/media/jsbasics.81444e5f92ad25294cc6d70c8be902e8.svg",
+    "static/media/jsadvanced.svg": "/about-nela/static/media/jsadvanced.d7a46798f14d3543d65e0ece73058365.svg",
+    "static/media/avatar.svg": "/about-nela/static/media/avatar.66ef69fab642d4edbbfee5928b699c56.svg",
+    "static/media/world.svg": "/about-nela/static/media/world.df5f5ec37e06c120de7fc80bb6103f89.svg",
+    "static/media/laptop.svg": "/about-nela/static/media/laptop.c12cdce4596ec2bb1a93af87275de891.svg",
+    "static/media/dogo.svg": "/about-nela/static/media/dogo.2fcb5db8c3620acca5dc3488d8d2cac3.svg",
+    "static/media/tennis.svg": "/about-nela/static/media/tennis.b7849ae6745d737d54065d0f03654fa9.svg",
+    "static/media/medium.svg": "/about-nela/static/media/medium.9d97131af8acdc97acc60799ea11c1b0.svg",
+    "static/media/tealfeed.svg": "/about-nela/static/media/tealfeed.f49fbcb4c3e377c4f07b97de0fcbead6.svg",
+    "static/media/triangle.svg": "/about-nela/static/media/triangle.21544369d7aa898a4363ae07c7799e48.svg",
+    "index.html": "/about-nela/index.html",
+    "main.3001a3a1.css.map": "/about-nela/static/css/main.3001a3a1.css.map",
+    "main.56246cad.js.map": "/about-nela/static/js/main.56246cad.js.map",
+    "787.fb265414.chunk.js.map": "/about-nela/static/js/787.fb265414.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3001a3a1.css",
+    "static/js/main.56246cad.js"
+  ]
+}
