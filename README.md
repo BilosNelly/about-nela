@@ -7,6 +7,8 @@ The content was added more or less without meaning, but it will be refactored in
 For now, the application is intended for the web, but a mobile version will arrive in a few days.
 The application is made completely without a backend, only the client side.
 
+@TODO Custom domain comming soon
+
 @TODO, Contact-form will be added
 https://www.emailjs.com/ will be used as emailservice and implemented via https://www.npmjs.com/package/emailjs.
 
