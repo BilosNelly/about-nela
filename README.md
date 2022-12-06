@@ -7,6 +7,8 @@ The content was added more or less without meaning, but it will be refactored in
 For now, the application is intended for the web, but a mobile version will arrive in a few days.
 The application is made completely without a backend, only the client side.
 
+Here it is https://bilosnelly.github.io/about-nela/ (domain name will be updated soon also )
+
 @TODO Custom domain comming soon
 
 @TODO, Contact-form will be added
